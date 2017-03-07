@@ -22,27 +22,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yNk-4v-RsH">
-                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="shX-nY-QTI">
+                                <rect key="frame" x="44" y="78" width="287" height="530"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yNk-4v-RsH" secondAttribute="bottom" constant="403" id="IeL-Ch-sFl"/>
-                            <constraint firstItem="yNk-4v-RsH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="JZ1-IY-VbS"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yNk-4v-RsH" secondAttribute="bottom" id="MaS-ic-0I0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yNk-4v-RsH" secondAttribute="trailing" constant="52" id="Mt1-Bs-nFT"/>
-                            <constraint firstItem="yNk-4v-RsH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="116" id="NyX-RJ-ENd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yNk-4v-RsH" secondAttribute="trailing" id="elm-ER-17X"/>
-                            <constraint firstItem="yNk-4v-RsH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="v8x-bm-ND0"/>
-                            <constraint firstItem="yNk-4v-RsH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vBg-sj-eKw"/>
-                            <constraint firstItem="yNk-4v-RsH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ycY-lo-MhR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="shX-nY-QTI" secondAttribute="trailing" constant="28" id="52R-1m-3rG"/>
+                            <constraint firstItem="shX-nY-QTI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="8DC-3o-v7o"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="shX-nY-QTI" secondAttribute="bottom" constant="59" id="cvA-zP-LkD"/>
+                            <constraint firstItem="shX-nY-QTI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="x04-ei-FVw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ihn-cu-AgK"/>
                     <connections>
-                        <outlet property="tableview" destination="yNk-4v-RsH" id="RXl-bz-iOs"/>
+                        <outlet property="tableviev" destination="shX-nY-QTI" id="Oet-o4-QVT"/>
+                        <outlet property="tableview" destination="shX-nY-QTI" id="qnS-gG-dgs"/>
                         <segue destination="uNg-dg-1fN" kind="show" identifier="moveSegue" id="KxQ-X9-TU1"/>
                     </connections>
                 </viewController>
@@ -63,20 +59,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnZ-2k-KY7">
-                                <rect key="frame" x="187.5" y="75" width="0.0" height="0.0"/>
+                                <rect key="frame" x="187.5" y="119" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⛪️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uzq-Bp-RN5">
-                                <rect key="frame" x="78" y="46" width="218" height="239"/>
+                                <rect key="frame" x="78" y="90" width="218" height="239"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jg-BD-DJ1">
-                                <rect key="frame" x="127" y="293" width="120" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="93" y="337" width="188" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -87,6 +83,7 @@
                             <constraint firstItem="4jg-BD-DJ1" firstAttribute="top" secondItem="Uzq-Bp-RN5" secondAttribute="bottom" constant="8" id="7BE-KX-WaO"/>
                             <constraint firstItem="Uzq-Bp-RN5" firstAttribute="top" secondItem="1b6-B4-MR6" secondAttribute="bottom" constant="26" id="Lqr-a5-Ila"/>
                             <constraint firstItem="4jg-BD-DJ1" firstAttribute="centerX" secondItem="8R0-Zh-wpE" secondAttribute="centerX" constant="-0.5" id="Mmo-8T-d9C"/>
+                            <constraint firstItem="4jg-BD-DJ1" firstAttribute="centerX" secondItem="8R0-Zh-wpE" secondAttribute="centerX" id="Tim-hj-JId"/>
                             <constraint firstItem="4jg-BD-DJ1" firstAttribute="centerX" secondItem="8R0-Zh-wpE" secondAttribute="centerX" constant="-0.5" id="UBF-Pc-o3j"/>
                             <constraint firstItem="Uzq-Bp-RN5" firstAttribute="centerX" secondItem="8R0-Zh-wpE" secondAttribute="centerX" id="cjV-m2-8sI"/>
                             <constraint firstItem="4jg-BD-DJ1" firstAttribute="centerX" secondItem="8R0-Zh-wpE" secondAttribute="centerX" constant="-0.5" id="hpp-9s-Qui"/>

@@ -9,10 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var tableviev: UITableView!
 
-    @IBOutlet weak var tableview: UITableView!
-    
     var emojis = ["😕","🤘","🦋","🥐","🏀","🏍","🚔","⛪️","📽","🔐"]
+    
+    @IBOutlet weak var tableview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "moveSegue", sender: "🕹")
+        let emoji = emojis[indexPath.row]
+        performSegue(withIdentifier: "moveSegue", sender: emoji)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
