@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B33FA1231E7010900031D94D /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FA1221E7010900031D94D /* DefinitionViewController.swift */; };
 		B36A302E1E6E968F008AE309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36A302D1E6E968F008AE309 /* AppDelegate.swift */; };
 		B36A30301E6E968F008AE309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36A302F1E6E968F008AE309 /* ViewController.swift */; };
 		B36A30331E6E968F008AE309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36A30311E6E968F008AE309 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B33FA1221E7010900031D94D /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		B36A302A1E6E968F008AE309 /* EmojiDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36A302D1E6E968F008AE309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B36A302F1E6E968F008AE309 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				B36A302D1E6E968F008AE309 /* AppDelegate.swift */,
 				B36A302F1E6E968F008AE309 /* ViewController.swift */,
+				B33FA1221E7010900031D94D /* DefinitionViewController.swift */,
 				B36A30311E6E968F008AE309 /* Main.storyboard */,
 				B36A30341E6E968F008AE309 /* Assets.xcassets */,
 				B36A30361E6E968F008AE309 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B36A30301E6E968F008AE309 /* ViewController.swift in Sources */,
+				B33FA1231E7010900031D94D /* DefinitionViewController.swift in Sources */,
 				B36A302E1E6E968F008AE309 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +303,7 @@
 				B36A303E1E6E968F008AE309 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
